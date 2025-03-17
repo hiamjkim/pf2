@@ -1,0 +1,36 @@
+#partner {
+  display: flex;
+  align-items: center;
+  background-color: #bdb4a8;
+  background-image: linear-gradient(-45deg, rgba(255,255,255,0) 50%, #511818 95%, #511818 100%),url(../img/orchestra.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation-name: colorslide;
+  animation-duration: 1s;
+}
+@keyframes colorslide{
+  from{
+    background-position-left: 0%,center;
+  }
+  to{
+    background-position-left: 100%,center;
+  }
+}
+#partner .wrap {
+  
+  gap: 40px;
+}
+#partner .wrap h2 {
+  
+}
+#partner .wrap h3 {
+  
+}
+#partner .wrap p {
+  
+}
+#partner .wrap a {
+  
+}

@@ -1,0 +1,94 @@
+/* 기본 스타일 초기화 */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {}
+
+
+/* 네비게이션 스타일 */
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #ccc;
+}
+
+header nav {
+  height: 88px;
+  align-items: center;
+}
+.wrap {}
+
+.flex {}
+
+.flex-between {}
+
+.gnb {
+  display: flex;
+  height: 100%;
+}
+
+.gnb>li {}
+
+.gnb>li>a {
+  padding: 0 32px;
+  height: calc(100% - 2px);
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: 0.5s;
+  border-bottom: 5px solid transparent;
+}
+
+.gnb>li>a:hover {
+
+  color: blue;
+  border-bottom: 5px solid;
+}
+
+.gnb .submenu {
+  display: none;
+}
+
+.gnb li:hover .submenu {}
+
+.submenu li a {}
+
+.submenu li a:hover {}
+
+/* 기타 메뉴 */
+.etc {
+  gap: 20px;
+}
+
+.etc li {
+  position: relative;
+}
+
+.etc li:nth-child(2)::before {
+
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  background-color: #ccc;
+  border-radius: 50%;
+  left: -10px;
+  top: 50%;
+}
+
+.etc a {
+  padding: 0 4px;
+  color: #e8e8e8;
+  transition: 0.3s;
+}
+
+.etc a:hover {
+
+  color: white;
+}
